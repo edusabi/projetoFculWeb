@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+    width: 14px; /* Largura da barra de rolagem */
+}
+
+/* Personalizar a track (trilho da barra) */
+::-webkit-scrollbar-track {
+    background: var(--black); /* Cor do trilho */
+}
+
+/* Personalizar o thumb (puxador da barra) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--white); /* Cor do puxador */
+    border-radius: 2px; /* Bordas arredondadas */
+    border: 3px solid var(--black); /* Borda ao redor do puxador */
+}
+
+:root{
+    --black: #FFF;
+    --white: #000;
+    --green: #00008B;
+}
+
+.light{
+    --black: #000;
+    --white: #FFF;
+    --green: #00FF00;
+}
+
+body{
+    background-color: var(--black);
+}

@@ -1,0 +1,94 @@
+nav{
+    background-color: var(--green);
+    box-shadow: 0 0 18px var(--green);
+    height: 12vh;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: var(--black);
+}
+
+#logo{
+    color: var(--black);
+}
+
+.nav-bar{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar div {
+    border-radius: 1px;
+    width: 32px;
+    height: 2px;
+    background: var(--black);
+    margin: 8px;
+    transition: .4s;
+}
+
+/* CHANGE COLOR SITE */
+
+.changeColor{
+    position: relative;
+    width: 60px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.ball{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50%;
+    transition: left 1s;
+}
+
+.ball-move{
+    left: calc(100% - 20px);
+}
+
+@media(max-width:610px){
+
+    nav ul{
+        background-color: var(--green);
+        top: 12.3vh;
+        display: none;
+        align-items: center;
+        justify-content: start;
+        padding: 2rem 0;
+        font-size: 2rem;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        flex-direction: column;
+        gap: 7rem;
+    }
+
+    .nav-bar{
+        display: block;
+        cursor: pointer;
+    }
+
+}

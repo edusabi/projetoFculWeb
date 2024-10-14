@@ -1,0 +1,71 @@
+body{
+    color: var(--white);
+}
+
+.FrontTitleBack{
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.divPrinciBack{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPrinciBack img{
+    width: 200px;
+}
+
+.textosBack{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.textosBack h2{
+    padding: 1rem 0;
+}
+
+.textosBack div ol{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media (max-width: 650px) {
+
+    .FrontTitleBack{
+        font-size: .8rem;
+    }
+    
+    .divPrinciBack{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .textosBack{
+        gap: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .textosBack div ol{
+        padding: .4rem .8rem;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .FrontTitleBack{
+        font-size: .55rem;
+    }
+    
+}
