@@ -1,8 +1,10 @@
+/* css do body da página full */
 body{
     color: var(--white);
 }
 
-.FrontTitleFull{
+/* css do titulo da página full */
+.FullTitleFull{
     margin: 1rem 0;
     flex-direction: column;
     gap: .5rem;
@@ -11,6 +13,7 @@ body{
     display: flex;
 }
 
+/* css da div principal da página full */
 .divPrinciFull{
     max-width: 1000px;
     margin: 0 auto;
@@ -20,10 +23,12 @@ body{
     align-items: center;
 }
 
+/* css da div principal das imagens da página full */
 .divPrinciFull img{
     width: 200px;
 }
 
+/* css dos textos da página full */
 .textosFull{
     text-align: justify;
     display: flex;
@@ -38,7 +43,7 @@ body{
     gap: .5rem;
 }
 
-
+/* css da media para deixar o site responsivo ná página full */
 @media (max-width: 650px) {
     .FrontTitleFull h3{
         font-size: 1.001rem;
@@ -75,8 +80,12 @@ body{
 }
 
 @media (max-width: 550px) {
-    .FrontTitleFull{
-        font-size: .55rem;
+    .FullTitleFull{
+        font-size: .60rem;
+    }
+    
+    .FullTitleFull h3{
+        font-size: 1rem;
     }
     
 }

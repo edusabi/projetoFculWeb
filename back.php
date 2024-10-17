@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="public/css/global.css">
     <link rel="stylesheet" href="public/css/back.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <?php include "navbar.php"; ?>
 
-    <div class="FrontTitleBack">
+    <div class="TitleBack">
         <h1>Principais linguagens para Back-End</h1>
     </div>
 
@@ -30,6 +27,9 @@
         </div>
 
         <div class="textosBack">
+
+    <!-- titulo da linguagem/framework de programaçao -->
+
             <h1>Node.Js</h1>
 
             <div>
@@ -109,6 +109,9 @@
         </div>
 
         <div class="textosBack">
+
+        <!-- titulo da linguagem/framework de programaçao -->
+
             <h1>Django</h1>
 
             <div>
@@ -184,6 +187,8 @@
         </div>
 
         <div class="textosBack">
+
+        <!-- titulo da linguagem/framework de programaçao -->
 
             <h1>SpringBoot</h1>
 

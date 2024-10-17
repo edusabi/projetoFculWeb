@@ -1,0 +1,84 @@
+body{
+    color: var(--white);
+}
+
+.DivAboutPrinc {
+    margin-top: 1rem;
+}
+
+#map {
+    height: 400px;
+    width: 500px;
+    margin-top: 20px;
+    z-index: 0;
+}
+
+.DivAboutPrinc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10rem;
+    padding: 3rem 0;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content button{
+    border: none;
+    background-color: var(--white);
+    padding: .4rem .8rem;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.diForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.diForm form{
+    margin-top: 1rem;
+    display: flex;
+    width: 40%;
+    padding: .5rem 0;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.diForm form button{
+    border: none;
+    background-color: var(--white);
+    padding: .4rem .8rem;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--black);
+}
+
+@media (max-width: 610px) {
+    #map{
+        width: 350px;
+        height: 300px;
+    }
+
+    .diForm form{
+        width: 50%;
+    }
+
+}
+
+/* Media para fazer com que o site fique responsivo na pagina home*/
+
+@media (max-width: 550px) {
+
+}

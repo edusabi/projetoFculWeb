@@ -1,14 +1,17 @@
+/* css do body da página front */
 body{
     color: var(--white);
 }
 
-.FrontTitleBack{
+/* css do titulo da página front */
+.TitleBack{
     margin: 1rem 0;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
+/* css da div principal da página front */
 .divPrinciBack{
     max-width: 1000px;
     margin: 0 auto;
@@ -18,10 +21,12 @@ body{
     align-items: center;
 }
 
+/* css da div principal das imagens da página front */
 .divPrinciBack img{
     width: 200px;
 }
 
+/* css dos textos da página front */
 .textosBack{
     text-align: justify;
     display: flex;
@@ -40,6 +45,7 @@ body{
     gap: .5rem;
 }
 
+/* css da media para deixar o site responsivo ná página front */
 @media (max-width: 650px) {
 
     .FrontTitleBack{
@@ -64,7 +70,7 @@ body{
 }
 
 @media (max-width: 550px) {
-    .FrontTitleBack{
+    .TitleBack{
         font-size: .55rem;
     }
     

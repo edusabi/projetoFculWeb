@@ -1,7 +1,9 @@
+/* css do body da página front */
 body{
     color: var(--white);
 }
 
+/* css do titulo da página front */
 .FrontTitle{
     margin: 1rem 0;
     justify-content: center;
@@ -9,6 +11,7 @@ body{
     display: flex;
 }
 
+/* css da div principal da página front */
 .divPrinci{
     max-width: 1000px;
     margin: 0 auto;
@@ -18,10 +21,12 @@ body{
     align-items: center;
 }
 
+/* css da div principal das imagens da página front */
 .divPrinci img{
     width: 200px;
 }
 
+/* css dos textos da página front */
 .textos{
     text-align: justify;
     display: flex;
@@ -40,6 +45,7 @@ body{
     gap: .5rem;
 }
 
+/* css da media para deixar o site responsivo ná página front */
 @media (max-width: 650px) {
 
     .FrontTitle{

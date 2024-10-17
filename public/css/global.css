@@ -1,28 +1,35 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../../font/Montserrat.ttf') format('truetype'); /* Corrigido: formato 'truetype' */
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'MinhaFonte', sans-serif;
 }
 
-/* Personalizar a barra de rolagem */
+/* css para personalizar a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 14px; /* Largura da barra de rolagem */
+    width: 14px; 
 }
 
-/* Personalizar a track (trilho da barra) */
 ::-webkit-scrollbar-track {
-    background: var(--black); /* Cor do trilho */
+    background: var(--black);
 }
 
-/* Personalizar o thumb (puxador da barra) */
+
 ::-webkit-scrollbar-thumb {
-    background-color: var(--white); /* Cor do puxador */
-    border-radius: 2px; /* Bordas arredondadas */
-    border: 3px solid var(--black); /* Borda ao redor do puxador */
+    background-color: var(--white); 
+    border-radius: 2px; 
+    border: 3px solid var(--black); 
 }
 
+/* Root para definir uma cor e usar em todo o site e poder fazer o tema light e dark */
 :root{
     --black: #FFF;
     --white: #000;
@@ -35,6 +42,7 @@
     --green: #00FF00;
 }
 
+/* css do body global da página */
 body{
     background-color: var(--black);
 }

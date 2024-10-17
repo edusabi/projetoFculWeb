@@ -1,18 +1,23 @@
+/* css do body da página home */
 body { 
     color: var(--white);
 }
 
+/* css da div principal da página home */
 .DivHomePrinc {
-    margin-top: 1rem;
+    margin-top: 5rem;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
 }
+
+/* css da div dos titulos da página home */
 
 .titleHome {
     display: flex;
+    height: 40vh;
     flex-direction: column;
     gap: 1rem;
 }
@@ -22,6 +27,7 @@ body {
     letter-spacing: 1px;
 }
 
+/* css da div dentro da página home */
 .titleHome div {
     user-select: none;
     display: flex;
@@ -32,18 +38,57 @@ body {
     flex-wrap: nowrap;
 }
 
+/* titulo da página home*/
 .titleHome div img {
     width: 50px; 
     max-width: 100%; 
     height: auto; 
 }
 
+/* css das imagens rodando na página home*/
 .rotate-images img {
     display: inline-block;
     animation: rotateY 5s infinite linear;
     transform-origin: center;
 }
 
+.container-slideshow {
+    max-width: 1000px;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    text-align: center; /* Centraliza as imagens */
+}
+
+.slide {
+    margin-top: 5rem;
+    display: none;
+}
+
+.slide img {
+    width: 400px; /* Mantém o tamanho das imagens */
+}
+
+.anterior, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.anterior {
+    left: 0;
+  }
+
+  .proximo {
+    right: 0;
+  }
+
+/* Animação para fazer as imagens rodarem na página home */
 @keyframes rotateY {
     0% {
         transform: rotateY(0deg);
@@ -53,7 +98,101 @@ body {
     }
 }
 
+.react,.angular,.django,.vue,.node,.spring{
+    cursor: pointer;
+}
+
+/* MODAL CSS */
+.modalLinguagens {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    color: var(--white);
+    background-color: var(--black);
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    transform: translate(-50%, -50%);
+    padding: 1rem; 
+}
+
+.modalLinguagens div {
+    flex: 0 0 calc(50% - 1rem); /* Cada linguagem ocupará 50% menos 1rem de espaço */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 7rem;
+    text-align: center; /* Centraliza o texto dentro de cada linguagem */
+}
+
+.modalLinguagens div img{
+    width: 70px;
+}
+
+.outrasLinguagens{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.closeModal{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.outrasLinguagens button{
+    cursor: pointer;
+    border: none;
+    padding: .7rem 0;
+    border-radius: 2px;
+    background-color: var(--white);
+    color: var(--black);
+    width: 200px;
+}
+
+
+/* Media para fazer com que o site fique responsivo na pagina home*/
+
 @media (max-width: 610px) {
+
+    .anterior, .proximo {
+        cursor: pointer;
+        position: absolute;
+        top: 60%;
+        padding: 8px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    .container-slideshow h1{
+        font-size: 1.5rem;
+    }
+
+    .container-slideshow img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+    }
+
     .titleHome {
         max-width: 800px;
         display: flex;
@@ -76,6 +215,8 @@ body {
         flex-wrap: wrap;
     }
 }
+
+/* Media para fazer com que o site fique responsivo na pagina home*/
 
 @media (max-width: 550px) {
     .titleHome {
@@ -100,4 +241,7 @@ body {
         margin: 5px; 
         max-width: 60px; 
     }
+
+    
+
 }
