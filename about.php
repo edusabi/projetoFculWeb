@@ -14,7 +14,7 @@
 
     <?php include "navbar.php"; ?>
 
-    <div class="DivAboutPrinc">
+<div class="DivAboutPrinc">
 
         <div class="content">
             <h3>Caso queira compartilhar com alguém que precise ver está página só clicar abaixo</h3>
@@ -24,6 +24,8 @@
             <button id="shareBtn">Compartilhar</button>
         </div>
 
+    <div class="DivFaM">
+
         <div class="mapaDiv">
             <h2>Nossa localização</h2>
             <div id="map"></div>
@@ -31,7 +33,7 @@
 
         <div class="diForm">
 
-            <h2>Caso queira tirar dúvidas comigo, só mandar uma mensagem!</h2>
+            <h2>Envie sua mensagem!</h2>
 
             <form id="formSubmit">
 
@@ -47,20 +49,18 @@
                     placeholder="Digite seu E-mail"
                     required>
 
-                <input type='number'
-                    name="idade"
-                    id="idade"
-                    placeholder="Digite sua idade"
-                    required>
-
                 <textarea placeholder="Digite sua dúvida aqui" required id="assunto"></textarea>
 
-                <button>Enviar</button>
+                <div class="divButton">
+                    <button>Enviar</button>
+                </div>
+
             </form>
 
         </div>
-
     </div>
+
+</div>
 
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>

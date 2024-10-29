@@ -40,7 +40,14 @@
 
         </div>
 
+        <div class="divCarroselCom">
 
+        <div class="pRecursos">
+            <h2 style="margin-bottom: 1rem;">Outros recursos importantes nesta area</h2>
+            <p>
+            O uso de Git e GitHub, junto com soluções de cloud, é fundamental no desenvolvimento web moderno. Git permite o controle de versão, facilitando a colaboração, enquanto GitHub armazena e compartilha repositórios de forma organizada. Já as plataformas de cloud, como AWS, Google Cloud e Azure, fornecem infraestrutura flexível, escalonável e segura para hospedar e gerenciar aplicações, além de permitir integração com CI/CD para atualizações contínuas. Juntos, esses recursos tornam o desenvolvimento mais colaborativo, seguro, eficiente e adequado para o crescimento e a manutenção das aplicações.
+            </p>
+        </div>
 
         <div class="container-slideshow">
             <div class="slide">
@@ -71,6 +78,8 @@
             <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
             <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
         </div>
+    
+    </div>
 
         <div class="outrasLinguagens">
             <h1>Outras linguagens comumente usadas em desenvolvimento web!</h1>
@@ -98,19 +107,7 @@
                     <h2>Flask</h2>
                     <p>É extremamente popular, especialmente em conjunto com Node.js no back-end e frameworks como Next.js no front-end. TypeScript é amplamente adotado devido à tipagem estática, oferecendo maior segurança no desenvolvimento.</p>
                     <img src="https://blog.appseed.us/content/images/2023/10/cover-flask.jpg" alt=""  style="width: 90px;">
-                </div>
-                
-                <div>
-                    <h2>Ruby on Rails</h2>
-                    <p>Um framework popular para desenvolvimento de aplicações web, utilizado por muitas startups devido à sua rapidez e facilidade de uso.</p>
-                    <img src="https://swiftlet.co.th/wp-content/uploads/2019/05/What-is-Ruby-on-Rails-1-1.png" alt=""  style="width: 90px;">
-                </div>
-                
-                <div>
-                    <h2>Golang</h2>
-                    <p>Está crescendo no desenvolvimento web, especialmente em APIs e microsserviços, devido à sua alta performance e simplicidade.</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png" alt="">
-                </div>
+                </div>            
                 
                 <div>
                     <h2>ASP.NET Core (C#)</h2>

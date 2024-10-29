@@ -41,22 +41,29 @@ body{
 }
 
 .diForm{
+    background-color: rgba(128, 128, 128, 0.711);
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 #formSubmit input,textarea{
     outline: none;
-    padding: .5rem .2rem ;
+    border: none;
+    padding: .5rem .2rem;
+    border-radius: 2px;
 }
 
 
 .diForm form{
     margin-top: 1rem;
     display: flex;
-    width: 40%;
+    width: 350px;
     padding: .5rem 0;
     gap: 2rem;
     flex-direction: column;
@@ -65,10 +72,24 @@ body{
 .diForm form button{
     border: none;
     background-color: var(--white);
-    padding: .4rem .8rem;
-    border-radius: 2px;
+    padding: .4rem .7rem;
+    border-radius: 20px;
     cursor: pointer;
+    width: 150px;
     color: var(--black);
+}
+
+.DivFaM{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 610px) {
