@@ -162,7 +162,7 @@ body {
 .outrasLinguagens button {
     padding: 12px 24px;
     font-size: 16px;
-    color: #fff;
+    color: var(--black);
     background-color: var(--green); /* Azul primário */
     border: none;
     border-radius: 8px;
@@ -172,7 +172,7 @@ body {
 }
 
 .outrasLinguagens button:hover {
-    background-color: #005a99; /* Azul mais escuro no hover */
+    background-color: var(--green); /* Azul mais escuro no hover */
     transform: scale(1.05);
 }
 
