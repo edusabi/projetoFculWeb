@@ -118,6 +118,8 @@
 
         </div>
 
+        <?php include "footer.php"; ?>
+
     <script>
         let indiceSlide = 0; // Índice para controlar qual slide está ativo
         mostrarSlide(indiceSlide); // Mostra o slide inicial

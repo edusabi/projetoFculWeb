@@ -1,0 +1,36 @@
+.footer{
+    background-color: var(--green);
+    color: var(--black);
+    height: 40vh;
+    padding: 1rem .5rem;
+    position: relative;
+    
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer h3{
+    margin: .5rem 0;
+}
+
+.recursos,.paginas{
+    margin-top: 1rem;
+    
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a{
+    color: var(--black);
+    text-decoration: underline !important;
+}
+
+.copy{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
